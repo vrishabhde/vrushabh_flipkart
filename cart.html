@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        #screen {
+            width: 100%;
+            height: 710px;
+            /* border: 5px solid red; */
+            /* background-color: rgb(226, 233, 236); */
+
+        }
+
+        #navbar {
+            width: 100%;
+            height: 55px;
+            /* border: 1px solid red; */
+            background-color: rgb(66, 66, 232);
+            display: flex;
+            color: white;
+            /* position: fixed; */
+
+        }
+
+        #navbar>img {
+
+            height: 20px;
+            /* border: 1px solid red; */
+            margin-left: 13%;
+            margin-top: 0.9%;
+        }
+
+        #navbar>:nth-child(2) {
+            width: 450px;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-left: 1%;
+            margin-top: 9px;
+            background-color: white;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #navbar>:nth-child(2)>input {
+            width: 250px;
+            height: 30px;
+            /* border: 1px solid red; */
+            font-size: 14px;
+            border: none;
+            padding-top: 2px;
+        }
+
+        #navbar>:nth-child(2)>i {
+            width: 150px;
+            height: 30px;
+            /* border: 1px solid red; */
+            font-size: 18px;
+            text-align: end;
+            box-sizing: border-box;
+            padding-top: 10px;
+            color: rgb(24, 24, 242);
+        }
+
+        #navbar>:nth-child(4) {
+            width: 150px;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-left: 1%;
+            margin-top: 0.6%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #navbar>:nth-child(5) {
+            width: 60px;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-left: 1%;
+            margin-top: 0.7%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #navbar>:nth-child(6) {
+            width: 60px;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-left: 2%;
+            margin-top: 0.7%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #navbar>:nth-child(7) {
+            width: 50px;
+            height: 35px;
+            /* border: 1px solid red; */
+            margin-left: 2%;
+            margin-top: 0.7%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        #switch {
+            width: 120px;
+            height: 28px;
+            /* border: 1px solid red; */
+            font-size: 16px;
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-weight: 550;
+            margin-top: 10px;
+            margin-left: 15px;
+            /* border: none; */
+        }
+
+        #switch>button {
+            width: 120px;
+            height: 31px;
+            /* border: 11px solid red; */
+            font-size: 16px;
+            text-align: center;
+            color: rgb(24, 24, 242);
+            font-weight: 540;
+            margin-top: 5px;
+            margin-left: 6px;
+            outline: none;
+            border: none;
+            background-color: white;
+        }
+
+        #second {
+            width: 90%;
+            /* border: 1px solid red; */
+            height: 100px;
+            margin-left: 5%;
+            /* margin-top: 70px; */
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #second>div {
+            width: 7%;
+            /* border: 1px solid red; */
+            height: 100px;
+            font-size: 14px;
+        }
+
+        #second>div>img {
+            width: 90%;
+            /* border: 1px solid red; */
+            height: 80px;
+            margin-left: 3.5%;
+        }
+
+        #second>div>h4 {
+            width: 100%;
+            /* border: 1px solid red; */
+            height: 20px;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        #second>div>h4>i {
+            margin-top: 2px;
+        }
+        #append{
+            width: 100%;
+            height: 500px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+        }
+        #append>div{
+            width: 46%;
+            height: 500px;
+            border: 2px solid red;
+           
+        }
+        #append>div:nth-child(2)>img{
+            width: 75%;
+            height: 400px;
+            border: 1px solid rgb(237, 228, 228);
+           margin-left: 75px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="screen">
+        <div id="navbar">
+            <img
+                src="https://static-assets-web.flixcart.com/fk-p-linchpin-web/fk-cp-zion/img/flipkart-plus_8d85f4.png" />
+            <div>
+                <input type="text" placeholder="Search for products, brands and more" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <!-- <div id="login"> -->
+            <div id="switch">
+                <button onclick="window.location.href='./fliplogin.html'">Login</button>
+            </div>
+            <!-- </div> -->
+
+            <div onclick="window.location.href='./addproduct.html'">Become a Seller</div>
+            <div>More<i class="fa-solid fa-angle-down"></i></div>
+            <div> <i class="fa-solid fa-cart-shopping"></i> Cart </div>
+            <div id="logout"></div>
+        </div>
+        <div id="second">
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" />
+                <h4>Grocery</h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" />
+                <h4>Mobiles</h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/0d75b34f7d8fbcb3.png?q=100" />
+                <h4>Fashion<i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" />
+                <h4>Electronics<i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" />
+                <h4>Home<i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" />
+                <h4>Appliances</h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/71050627a56b4693.png?q=100" />
+                <h4>Travel</h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" />
+                <h4>Offers</h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/dff3f7adcf3a90c6.png?q=100" />
+                <h4>Beauty</h4>
+            </div>
+            <div>
+                <img src="https://rukminim1.flixcart.com/fk-p-flap/128/128/image/05d708653beff580.png?q=100" />
+                <h4>Vehicles<i class="fa-solid fa-angle-down"></i></h4>
+            </div>
+        </div>
+       
+       
+        <div id="append">
+            <div id="practproduct"></div>
+            <div>
+                <img src="append1.JPG"/>
+            </div>
+        </div>
+        <script>
+
+            window.onload = function () {
+                var CurrentUser = JSON.parse(localStorage.getItem("currentuser"));
+                var data = JSON.parse(localStorage.getItem("flipkart"));
+                var divtoappendproduct = document.getElementById("practproduct");
+
+                var products;
+                for (var i = 0; i < data.length; i++) {
+                    if (CurrentUser.email == data[i].email) {
+
+                        products = data[i].cartproduct;
+                    }
+                }
+                // console.log(currentproducts);
+                var finaldata = "";
+                for (var i = 0; i < products.length; i++) {
+                    finaldata += `<div><img style="width:70%; height:200px;" src='${products[i].pimage}'/>
+                    </br><h3>${products[i].pname}</h3>
+                 <h3>${products[i].pbrand}</h3>
+                    <h4>${products[i].pprice}</h4>
+                    </div>`;
+                }
+                divtoappendproduct.innerHTML = finaldata;
+            }
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #screen {
+            width: 50%;
+            height: 500px;
+            border: 1px solid rgb(211, 187, 187);
+            margin-left: 25%;
+            margin-top: 50px;
+            display: flex;
+            background-color: rgb(245, 245, 245);
+        }
+
+        #left {
+            width: 40%;
+            height: 500px;
+            /* border: 1px solid red; */
+            background-color: rgb(23, 71, 231);
+            color: white;
+        }
+
+        #left>h1 {
+            margin-left: 15%;
+            margin-top: 5%;
+            font-weight: 550;
+        }
+
+        #left>p {
+            margin-left: 15%;
+            margin-top: 5%;
+            font-size: 20px;
+            color: rgb(209, 204, 204);
+        }
+
+        #left>img {
+            width: 80%;
+            height: 200px;
+            /* border: 1px solid red; */
+            margin-left: 10%;
+            margin-top: 120px;
+        }
+
+        #right {
+            width: 60%;
+            height: 500px;
+            /* border: 1px solid red; */
+            /* background-color: skyblue; */
+        }
+
+        #right>div {
+            width: 350px;
+            height: 50px;
+            border-bottom: 1px solid rgb(217, 212, 212);
+            /* border: 1px solid red; */
+            font-size: 18px;
+            margin-left: 30px;
+            margin-top: 30px;
+            color: grey;
+            text-align: center;
+            
+        }
+        #right>p{
+            margin-left: 30px;
+            font-size: 13px;
+            margin-top: 50px;
+        }
+        #right>button{
+            width: 250px;
+            height: 50px;
+            /* border: 1px solid red; */
+            margin-top: 30px;
+            margin-left: 80px;
+            border-radius: 5px;
+            background-color: orangered;
+            color: white;
+            border: none;
+        }
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <!-- <h1>register</h1> -->
+    <form onsubmit="register(event)">
+    <div id="screen">
+        <div id="left">
+            <h1>Register</h1>
+            <p>Get access to your </br>Orders, Wishlist and Reccomendations.</p>
+            <img src="https://image.shutterstock.com/image-photo/image-260nw-1556035571.jpg" />
+        </div>
+        <div id="right">
+            <div>
+                <label>Enter your Name</label></br>
+                <input type="name" id="name" />
+            </div>
+            <div>
+                <label>Enter your Email</label></br>
+                <input type="email" id="email" />
+            </div>
+            <div>
+                <label>Enter your password</label></br>
+                <input type="password" id="password" />
+            </div>
+            <div>
+                <label>Enter your confirm password</label></br>
+                <input type="password" id="cpassword" />
+            </div>
+            <p>By continuing, you agree to Flipkart's Terms of Use and Privacy </br>
+                Policy.</p>
+            <button onclick="register(event)">Register</button>
+               
+        </form> 
+           
+        </div>
+    </div>
+<script src="./flipregister.js"></script>
+</body>
+
+</html>

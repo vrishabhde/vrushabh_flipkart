@@ -1,0 +1,36 @@
+#flipkart_added_product {
+    width: 80%;
+    height: 1150px;
+    /* border: 10px solid red; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: start;
+    justify-content: space-between;
+    text-align: center;
+    background-color: rgb(241, 243, 243);
+
+}
+
+#flipkart_added_product>div {
+    width: 23.5%;
+    height: 350px;
+    border: 1px solid rgb(235, 230, 230);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#flipkart_added_product>div>h4 {
+    font-size: 20px;
+}
+
+#flipkart_added_product>div>h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+#flipkart_added_product>div>img {
+    width: 100%;
+    height: 75%;
+}
